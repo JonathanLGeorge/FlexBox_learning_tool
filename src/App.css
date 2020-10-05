@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.flex-container {
+  background-color: aquamarine;
+  padding: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  /*
+  justify-content:
+  Used to controll how the items should be positioned along the main axis
+  */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  /*
+align-items:
+Used to controll how the items should be positioned along the cross axis
+
+[][][][]  []        []
+[]        []        [][][][]
+[]        [][][][]  []
+*/
+  align-items: flex-start;
+
+  /*
+baseline will align the text even if the items are different sizes or even fonts
+*/
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  background-color: blueviolet;
+  padding: 45px;
+  margin: 30px;
+  color: coral;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.i2 {
+  background-color: blueviolet;
+  padding: 45px;
+  margin: 30px;
+  color: coral;
+  height: 200px;
+}
+
+.i4 {
+  background-color: blueviolet;
+  padding: 45px;
+  margin: 30px;
+  color: coral;
+  font-size: 70px;
 }
